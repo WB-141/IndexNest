@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-about.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="Assets/favicon.png">
+    <title>Over Mij</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-bg">
+          <div class="nav-bar">
+            <div class="nav-logo-container">
+              <img src="Assets/logo.png" class="nav-logo" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Linker menu, info, foto, knop terug naar hoofdpagina-->
+    <div class="about-container">
+      <section class="left-part">
+        <div class="intr-bg">
+          <div class="intr-container">
+            <a href="index.html"><span class="intr-go-back"><img class="go-back-image" src="Assets/arrow-bar-left.svg" width="25">Ga terug</span></a>
+            <img src="Assets/PF.png" class="intr-profile-pic" />
+            <h3 class="intr-title">Hey {toekomstige-klant}!</h3>
+            <p class="intr-introduction">
+              Mijn naam is Ruben. Drie jaar geleden begon ik met coderen,
+              aanvankelijk via game development. In mijn vrije tijd verdiepte ik
+              mij in C#, wat de basis legde voor mijn interesse in programmeren.
+              Sindsdien ben ik mij stap voor stap gaan verdiepen in Python, HTML
+              en CSS, en tegenwoordig ben ik ook bezig met JavaScript. Coderen
+              geeft mij enorm veel energie, omdat ik mijn creativiteit erin
+              kwijt kan en ik leer nog elke dag.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Contact formulier wat gebruikt formspree-->
+      <section class="right-part">
+        <div class="contact-bg">
+          <div class="contact-part">
+            <span class="contact-title">Contact</span>
+            <p class="contact-instruction">Vragen en verzoeken zijn van harte welkom, vul het formulier in en ik neem zo snel mogelijk contact met u op.</p>
+            <div class="contact-form">
+              <form action="https://formspree.io/f/xblyqpqq" method="POST" class="form">
+                <label>
+                  E-mail adres:
+                  <input type="email" name="email" />
+                </label>
+                <label>
+                    Onderwerp:
+                    <input type="text" name="subject" />
+                </label>
+                <label>
+                  Bericht:
+                  <textarea name="message"></textarea>
+                </label>
+
+                <button type="submit" class="contact-send">Verzenden</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
