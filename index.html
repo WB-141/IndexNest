@@ -23,27 +23,19 @@
         <div class="intr-nav">
           <div class="intr-buttons">
             <div class="intr-button" id="intr-button1">
-              <a href=# id="aboutme-button">Over mij</a>
-            </div>
-
-            <div class="intr-button" id="intr-button1">
-              <a href=# id="watMaakIk-button">Wat maak ik</a>
+              <a href="#" id="aboutme-button">Over mij</a>
             </div>
 
             <div class="intr-button" id="intr-button2">
-              <a href="#portfolio" class="intr-link">Prijzen</a>
+              <a href="#" id="watMaakIk-button">Wat maak ik</a>
             </div>
 
             <div class="intr-button" id="intr-button3">
-              <a href="#skills" class="intr-link">Wat kan je verwachten</a>
+              <a href="#portfolio" id="prijzen-button">Prijzen</a>
             </div>
 
             <div class="intr-button" id="intr-button4">
               <a href="#skills" class="intr-link">Veel gestelde vragen</a>
-            </div>
-
-            <div class="intr-button" id="intr-button5">
-              <a href="#skills" class="intr-link">Over mij</a>
             </div>
           </div>
         </div>
@@ -113,6 +105,17 @@
             </div>
           </div>
         </div>
+        <div class="text-under-picture">
+          <span class="text-grid-header">Hoe werk ik?</span>
+          <p class="hoe-werk-ik">
+            Tijdens een gratis intake neem ik je in 15 minuten mee in hoe ik
+            werk. Ik laat je zeven tot tien ontwerpen zien die ik zelf heb
+            gemaakt. Je kiest wat je aanspreekt en van daaruit pas ik het aan
+            tot het perfect bij jouw bedrijf past. Kleine aanpassingen zijn geen
+            probleem. Ik werk alleen binnen de gekozen template zodat het
+            betaalbaar blijft en snel af is.
+          </p>
+        </div>
       </div>
     </section>
     <section id="watMaakIkSection">
@@ -121,7 +124,7 @@
           <span class="port-title">Wat maak ik</span>
           <div class="port-section">
             <div class="portofolio-card" id="p-card1">
-              <img src="Assets/desk.png" />
+              <img src="Assets/Desk-pic1.png" />
               <div class="card-title">
                 <span>One-page pagina</span>
               </div>
@@ -130,7 +133,7 @@
                   >Alle <span class="bold-text">informatie</span> op een
                   pagina.</span
                 >
-                <p>
+                <p class="card-text-explain">
                   Een korte introductie van je bedrijf of jezelf, je diensten of
                   tarieven, contactgegevens en een handig formulier. Alles op
                   één overzichtelijke pagina waar bezoekers snel vinden wat ze
@@ -169,16 +172,16 @@
             </div>
 
             <div class="portofolio-card" id="p-card2">
-              <img src="Assets/desk.png" />
+              <img src="Assets/desk-pic2.png" />
               <div class="card-title">
                 <span>Multiple-page pagina</span>
               </div>
               <div class="card-text">
                 <span class="card-text-title">
-                  Informatie verdeeld over
-                  <span class="bold-text">meerdere pagina’s</span>.
+                  Je
+                  <span class="bold-text">informatie</span> verdeeld.
                 </span>
-                <p>
+                <p class="card-text-explain">
                   Denk aan een aparte pagina voor je diensten of tarieven, een
                   duidelijke 'Over mij' of bedrijfsintroductie, en een
                   contactpagina met formulier. Ideaal voor wie meer structuur of
@@ -218,7 +221,7 @@
             </div>
 
             <div class="portofolio-card" id="p-card3">
-              <img src="Assets/desk.png" />
+              <img src="Assets/desk-pic3.png" />
               <div class="card-title">
                 <span>Gallerij</span>
               </div>
@@ -227,7 +230,7 @@
                   Een visuele <span class="bold-text">gallerij</span> om je werk
                   te laten zien.
                 </span>
-                <p>
+                <p class="card-text-explain">
                   Ideaal voor creatieve beroepen. Toon je werk in een strakke
                   fotoweergave, eventueel met filters of categorieën voor
                   overzicht.
@@ -236,9 +239,7 @@
 
               <div class="overlay-card hidden" id="po-card3">
                 <div class="card-hidden-text">
-                  <span class="hidden-text-title"
-                    >Waarom een gallerij?</span
-                  >
+                  <span class="hidden-text-title">Waarom een gallerij?</span>
 
                   <span class="hidden-text-explain"
                     >Een gallerij-pagina legt de focus op jouw werk in beeld.
@@ -251,13 +252,19 @@
                   <div class="hidden-card-list">
                     <div class="check-mark">
                       <p class="hidden-point-bold">Voordelen</p>
-                      <p class="hidden-points">✓ Professioneel en visueel sterk</p>
-                      <p class="hidden-points">✓ Structuur via albums of categorieën</p>
-                      <p class="hidden-points">✓ Perfect geschikt om werk constant te updaten</p>
+                      <p class="hidden-points">
+                        ✓ Professioneel en visueel sterk
+                      </p>
+                      <p class="hidden-points">
+                        ✓ Structuur via albums of categorieën
+                      </p>
+                      <p class="hidden-points">
+                        ✓ Perfect geschikt om werk constant te updaten
+                      </p>
                       <p class="hidden-points"></p>
                       <p class="hidden-point-bold">Nadelen</p>
-                      <p class="hidden-points">- Grote bestanden = tragere pagina’s</p>
-                      <p class="hidden-points">-  Beperkte content voor SEO</p>
+                      <p class="hidden-points">- Tragere pagina’s</p>
+                      <p class="hidden-points">- Beperkte content voor SEO</p>
                     </div>
                   </div>
                 </div>
@@ -269,35 +276,39 @@
       </div>
     </section>
 
-    <section class="Prijzen">
+    <section id="prijzenSection">
       <div class="port-part">
         <div class="port-bg">
           <span class="port-title">Prijzen</span>
           <div class="port-section">
-            <div class="prijzen-card">
-              <div class="prijzen-card-title">
+            <div class="prijzen-card hidden" id="pri-card1">
+              <p class="price">Prijs: €399</p>
+              <div class="prijzen-card-title" id="pricecard1">
                 <!--Dit is een price-card-->
-                <span>(€329) One-page pagina </span>
+                <span>One-page pagina </span>
               </div>
               <div class="card-text">
                 <span class="card-text-title"
-                  >Verwachten levertijd van 5 dagen</span
+                  >Verwachten levertijd van 5 werkdagen*</span
                 >
                 <p>
                   Een compacte website met alle belangrijke info op één pagina.
                   Sneller te bouwen, dus een scherpe prijs.
                 </p>
               </div>
+              <div class="prijzen-card hidden" id="pr-card1-overlay"></div>
             </div>
 
             <div class="prijzen-card">
-              <div class="prijzen-card-title">
+              <p class="price">Prijs: €529-€729</p>
+              <div class="prijzen-card-title" id="pricecard2">
                 <!--Dit is een price-card-->
-                <span>(€529-€729) Multiple-page pagina</span>
+
+                <span>Multiple-page pagina</span>
               </div>
               <div class="card-text">
                 <span class="card-text-title"
-                  >Verwachten levertijd van 7 dagen
+                  >Verwachten levertijd van 10 werkdagen*
                 </span>
                 <p>
                   Voor wie meerdere pagina’s nodig heeft. Extra tijd voor
@@ -308,14 +319,16 @@
             </div>
 
             <div class="prijzen-card">
-              <div class="prijzen-card-title">
+              <p class="price">Prijs: €859</p>
+              <div class="prijzen-card-title" id="pricecard3">
                 <!--Dit is een price-card-->
-                <span>(€829) Gallerij</span>
+                <span>Gallerij</span>
               </div>
               <div class="card-text">
                 <span class="card-text-title"
-                  >Verwachten levertijd van 7 dagen
+                  >Verwachten levertijd van 10 werkdagen*
                 </span>
+
                 <p>
                   Naast de visuals vraagt dit type site om slimme
                   contentstructuur, filtering en techniek achter de schermen.
@@ -324,7 +337,10 @@
             </div>
           </div>
         </div>
-        <div class="port-container"></div>
+        <p class="disclaimer">
+          *Het ontwerpen wordt gestart na aanlevering van bijbehorende spullen
+          vanuit de klant, denk aan teksten, logo's en afbeeldingen.
+        </p>
       </div>
     </section>
 

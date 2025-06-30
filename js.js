@@ -31,6 +31,17 @@ function activateCard() {
   default_card2.addEventListener("mouseleave", () => {
     overlay2.classList.add("hidden");
   });
+
+  const pricetag1 = document.getElementById("pr-card1-overlay");
+  const default_pricetag1 = document.getElementById("pr-card1");
+
+  default_pricetag1.addEventListener("mouseenter", () => {
+    pricetag1.classList.remove("hidden");
+  });
+
+  default_pricetag1.addEventListener("mouseleave", () => {
+    pricetag1.classList.add("hidden");
+  });
 }
 
 function scrollAboutMe(){
@@ -53,6 +64,19 @@ function watMaakIk(){
     })
 }
 
+function prijzen(){
+    const button = document.getElementById("prijzen-button")
+    const section = document.getElementById("prijzenSection")
+
+    button.addEventListener("click", () => {
+        event.preventDefault(); 
+        section.scrollIntoView({ behavior: "smooth" });
+    })
+}
+
+
+
 scrollAboutMe();
 watMaakIk();
+prijzen();
 activateCard();
