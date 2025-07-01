@@ -62,21 +62,31 @@
         <div class="about-me-bg">
           <h1 class="about-me-title">Front-end Web Developer</h1>
           <div class="about-me-container">
-            <div class="about-image">
-              <img src="Assets/PF.png" alt="" />
-            </div>
             <div class="text-grid-h">
               <div class="text-grid-left">
-                <span class="text-grid-header">Wie ben ik?</span>
-                <span class="text-grid-text">
-                  Ik ben Ruben. In mijn vrije tijd zit ik graag achter mijn
-                  laptop om creatief bezig te zijn met code. Die liefde voor
-                  design en techniek zet ik nu in om mooie en
-                  gebruiksvriendelijke websites te bouwen.
-                </span>
-                <span class="text-grid-text"
-                  >Misschien binnenkort ook die van jou?
-                </span>
+                <div>
+                  <span class="text-grid-header">Wie ben ik?</span>
+                  <p class="hoe-werk-ik">
+                    Tijdens een gratis intake neem ik je in 15 minuten mee in
+                    hoe ik werk. Ik laat je zeven tot tien ontwerpen zien die ik
+                    zelf heb gemaakt. Je kiest wat je aanspreekt en van daaruit
+                    pas ik het aan tot het perfect bij jouw bedrijf past. Kleine
+                    aanpassingen zijn geen probleem. Ik werk alleen binnen de
+                    gekozen template zodat het betaalbaar blijft en snel af is.
+                  </p>
+                </div>
+
+                <div>
+                  <span class="text-grid-header">Hoe werk ik?</span>
+                  <p class="hoe-werk-ik">
+                    Tijdens een gratis intake neem ik je in 15 minuten mee in
+                    hoe ik werk. Ik laat je zeven tot tien ontwerpen zien die ik
+                    zelf heb gemaakt. Je kiest wat je aanspreekt en van daaruit
+                    pas ik het aan tot het perfect bij jouw bedrijf past. Kleine
+                    aanpassingen zijn geen probleem. Ik werk alleen binnen de
+                    gekozen template zodat het betaalbaar blijft en snel af is.
+                  </p>
+                </div>
               </div>
 
               <div class="text-grid-right">
@@ -102,20 +112,16 @@
                   sterke, professionele website.</span
                 >
               </div>
+
+              <div>
+                <div class="text-grid-right">
+                  <img src="Assets/PF.png" class="about-image" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="text-under-picture">
-          <span class="text-grid-header">Hoe werk ik?</span>
-          <p class="hoe-werk-ik">
-            Tijdens een gratis intake neem ik je in 15 minuten mee in hoe ik
-            werk. Ik laat je zeven tot tien ontwerpen zien die ik zelf heb
-            gemaakt. Je kiest wat je aanspreekt en van daaruit pas ik het aan
-            tot het perfect bij jouw bedrijf past. Kleine aanpassingen zijn geen
-            probleem. Ik werk alleen binnen de gekozen template zodat het
-            betaalbaar blijft en snel af is.
-          </p>
-        </div>
+        <div class="text-under-picture"></div>
       </div>
     </section>
     <section id="watMaakIkSection">
@@ -281,7 +287,7 @@
         <div class="port-bg">
           <span class="port-title">Prijzen</span>
           <div class="port-section">
-            <div class="prijzen-card hidden" id="pri-card1">
+            <div class="prijzen-card" id="pr-card1">
               <p class="price">Prijs: €399</p>
               <div class="prijzen-card-title" id="pricecard1">
                 <!--Dit is een price-card-->
@@ -296,43 +302,77 @@
                   Sneller te bouwen, dus een scherpe prijs.
                 </p>
               </div>
-              <div class="prijzen-card hidden" id="pr-card1-overlay"></div>
+              <div class="hidden-prijzen-card hidden" id="pr-card1-overlay">
+                <div class="prize-card-hidden-text">
+                  <span class="hidden-prize-text-title"
+                    >Wat krijg je voor de prijs?</span
+                  >
+                  <p class="hidden-prize-text-explain">
+                    Deze pagina’s zijn perfect voor starters of ondernemers die
+                    snel online willen zijn. Ze worden vaak ingezet voor
+                    portfolio’s, tijdelijke acties of lanceringen.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div class="prijzen-card">
-              <p class="price">Prijs: €529-€729</p>
+            <div class="prijzen-card" id="pr-card2">
+              <p class="price">Prijs: €599-799</p>
               <div class="prijzen-card-title" id="pricecard2">
                 <!--Dit is een price-card-->
-
-                <span>Multiple-page pagina</span>
+                <span>Multiple-page pagina </span>
               </div>
               <div class="card-text">
                 <span class="card-text-title"
-                  >Verwachten levertijd van 10 werkdagen*
-                </span>
+                  >Verwachte levertijd: 5 werkdagen*</span
+                >
                 <p>
-                  Voor wie meerdere pagina’s nodig heeft. Extra tijd voor
-                  structuur, navigatie en styling bepaalt de uiteindelijke
-                  prijs.
+                  Een complete website met meerdere pagina’s voor bijvoorbeeld
+                  diensten, over ons en contact. Ideaal als je wat meer info
+                  kwijt wilt dan op één pagina past.
                 </p>
+              </div>
+              <div class="hidden-prijzen-card hidden" id="pr-card2-overlay">
+                <div class="prize-card-hidden-text">
+                  <span class="hidden-prize-text-title"
+                    >Wat krijg je voor de prijs?</span
+                  >
+                  <p class="hidden-prize-text-explain">
+                    Deze websites zijn handig voor bedrijven of zzp’ers die
+                    professioneel voor de dag willen komen. Ze geven je ruimte
+                    om alles goed uit te leggen, en zorgen voor overzicht voor
+                    je bezoekers.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div class="prijzen-card">
-              <p class="price">Prijs: €859</p>
+            <div class="prijzen-card" id="pr-card3">
+              <p class="price">Prijs: €799-€999</p>
               <div class="prijzen-card-title" id="pricecard3">
                 <!--Dit is een price-card-->
-                <span>Gallerij</span>
+                <span>Gallerij pagina </span>
               </div>
               <div class="card-text">
                 <span class="card-text-title"
-                  >Verwachten levertijd van 10 werkdagen*
-                </span>
-
+                  >Verwachte levertijd: 5 tot 10 werkdagen*</span
+                >
                 <p>
-                  Naast de visuals vraagt dit type site om slimme
-                  contentstructuur, filtering en techniek achter de schermen.
+                  Een mooie pagina met ruimte voor foto’s of projecten. Ideaal
+                  als je visueel wil laten zien wat je doet, maakt of aanbiedt.
                 </p>
+              </div>
+              <div class="hidden-prijzen-card hidden" id="pr-card3-overlay">
+                <div class="prize-card-hidden-text">
+                  <span class="hidden-prize-text-title"
+                    >Wat krijg je voor de prijs?</span
+                  >
+                  <p class="hidden-prize-text-explain">
+                    Perfect voor fotografen, ontwerpers, creatievelingen of
+                    ondernemers met producten of cases. Je bezoekers krijgen in
+                    één oogopslag een goed beeld van je werk.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -342,13 +382,93 @@
           vanuit de klant, denk aan teksten, logo's en afbeeldingen.
         </p>
       </div>
+      <section class="ExtraCosts">
+        <div class="ec-part">
+          <div class="ec-bg">
+            <p class="ec-header">Extra mogelijkheden</p>
+            <div class="ec-banner">
+              <div class="ec-colorbox" id="cc-one"></div>
+              <p class="ec-text">
+                [€75] Domeinnaam registratie, Hosting & Publicatie.
+              </p>
+            </div>
+
+            <div class="ec-banner">
+              <div class="ec-colorbox" id="cc-two"></div>
+              <p class="ec-text">
+                [€75] Optimalisatie van meta-tags, paginatitel, alt-teksten.
+              </p>
+            </div>
+
+            <div class="ec-banner">
+              <div class="ec-colorbox" id="cc-three"></div>
+              <p class="ec-text">
+                [€25] Eenmalige aanpassing van foto's en teksten.
+              </p>
+            </div>
+
+            <div class="ec-banner">
+              <div class="ec-colorbox" id="cc-four"></div>
+              <p class="ec-text">
+                [€49] Google Analytics | Elke maand jouw bezoekersdata op een
+                rij.
+              </p>
+            </div>
+            <div class="voorwaarden">
+              <div>
+                <p class="ec-header">Wat zit er in het pakket?</p>
+                <p class="ec-explain">
+                  Je ontvangt van mij de complete bestanden van je website
+                  (HTML, CSS en JS). Dit is de motor van je site: helemaal
+                  werkend en klaar om online te zetten. Hosting is niet
+                  inbegrepen, maar ik help je daar graag mee tegen een kleine
+                  vergoeding.
+                </p>
+
+                <p class="ec-explain">
+                  Na oplevering heb je 10 werkdagen de tijd om gratis kleine
+                  aanpassingen te laten doen, zoals tekstwijzigingen, andere
+                  foto’s of kleuren. Zo zorgen we ervoor dat alles perfect bij
+                  jouw bedrijf past.
+                </p>
+              </div>
+
+              <div>
+                <p class="ec-header">Betalingmethode</p>
+                <p class="ec-explain">
+                  Ik werk met een aanbetaling van 50%. We bespreken eerst wat je
+                  wil en welk pakket het beste past. Daarna stuur ik je een
+                  offerte met het afgesproken bedrag. Zodra de aanbetaling
+                  binnen is, ga ik aan de slag. Omdat ik alles op maat maak, is
+                  geld terug daarna niet meer mogelijk.
+                </p>
+
+                <p class="ec-explain">
+                  De website wordt pas online gezet nadat het volledige bedrag
+                  is voldaan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <section>
       <!--Over mij onderdeel-->
-      <div class="about-me-part">
+      <div class="blank-part">
         <div class="about-me-bg">
           <div class="about-me-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-formulier">
+      <div class="port-part">
+        <div class="port-bg">
+          <span class="port-title">Contact</span>
+          <p>Onderwerp</p>
+          <input />
         </div>
       </div>
     </section>

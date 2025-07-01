@@ -1,5 +1,5 @@
 body {
-  background-color: #f1f1f1;
+  background-color: #ededed;
   overflow-x: hidden;
   margin: 0px;
   font-family: "Poppins", sans-serif;
@@ -171,6 +171,7 @@ h1 {
   height: 45vh;
   margin-top: 20px;
   margin-left: 50px;
+  margin-bottom: 100px;
 }
 
 .about-me-title {
@@ -181,7 +182,7 @@ h1 {
 
 .about-image {
   display: flex;
-  height: 350px;
+  height: 400px;
   margin-left: 40px;
   margin-right: 20px;
   margin-bottom: 60px;
@@ -190,9 +191,14 @@ h1 {
 .text-grid-h {
   display: grid;
   margin-left: 40px;
+  margin-bottom: 100px;
   margin-top: -10px;
-  gap: 30px;
-  grid-template-rows: 1.2fr 3fr;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.text-grid-text{
+  max-width: 500px;
 }
 
 .text-grid-left {
@@ -208,6 +214,7 @@ h1 {
 .text-grid-header {
   font-size: 26px;
   font-weight: bold;
+    max-width: 500px;
 }
 
 .text-grid-right {
@@ -338,7 +345,7 @@ h1 {
   justify-content: center;
   font-size: 2em;
   width: 82%;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .port-section {
@@ -397,25 +404,86 @@ h1 {
 .prijzen-card-title {
   display: flex;
   border-radius: 2%;
-  font-size: 18px;
+  font-size: 22px;
   padding: 20px;
-  outline: solid 1px rgb(208, 208, 208);
 }
 
-.pr-card1-overlay {
+.prize-card-hidden-text {
   display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+.hidden-prize-text-title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.hidden-prize-text-explain {
+  font-size: 18px;
+}
+#pr-card1 {
+  position: relative;
+}
+
+#pr-card1-overlay {
   position: absolute;
   border-radius: 2%;
-  background: linear-gradient(red, #ffffff);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 
-  animation: fade-in 0.3s ease-in-out;
+  animation: price-fade-in 0.3s ease-in-out;
+}
+
+#pr-card2 {
+  position: relative;
+}
+
+#pr-card2-overlay {
+  position: absolute;
+  border-radius: 2%;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  animation: price-fade-in 0.3s ease-in-out;
+}
+
+#pr-card3 {
+  position: relative;
+}
+
+#pr-card3-overlay {
+  position: absolute;
+  border-radius: 2%;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  animation: price-fade-in 0.3s ease-in-out;
+}
+
+@keyframes price-fade-in {
+  from {
+    opacity: 0;
+    scale: 0.95;
+  }
+  to {
+    opacity: 100;
+    scale: 1;
+  }
 }
 #pricecard1 {
-  background-color: #bae4e4;
+  background-color: #c7dbb4;
 }
 
 #pricecard2 {
@@ -423,11 +491,11 @@ h1 {
 }
 
 #pricecard3 {
-  background-color: #e0b4e0;
+  background-color: #b4b4e0;
 }
 
 .disclaimer {
-  margin-left: 200px;
+  margin-left: 300px;
   margin-top: 30px;
   font-size: 14px;
 }
@@ -461,6 +529,78 @@ h1 {
   font-size: 13px;
 }
 
+.ec-part{
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
+  display: flex;
+  width: 74%;
+  height: 500px;
+}
+
+
+.ec-banner{
+  display: flex;
+  width: 74vw;
+  height: 100px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.ec-colorbox{
+    display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+#cc-one{
+  background-color: #5c5c5c;
+}
+
+#cc-two{
+  background-color: #5c5c5c;
+}
+#cc-three{
+  background-color: #5c5c5c;
+}
+#cc-four{
+  background-color: #5c5c5c;
+}
+
+.voorwaarden{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+}
+
+.ec-header{
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.ec-subheader{
+  font-size: 22px;
+  margin-left: 10px;
+}
+.ec-text{
+  margin-left: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact-container{
+
+}
+
+.ec-explain{
+  font-size: 16px;
+  margin-left: 10px;
+  max-width: 500px;
+}
 .footer-part {
   display: block;
   margin-top: 100px;
