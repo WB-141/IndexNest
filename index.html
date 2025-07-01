@@ -131,7 +131,7 @@
           <div class="port-section">
             <div class="portofolio-card" id="p-card1">
               <img src="Assets/Desk-pic1.png" />
-              <div class="card-title">
+              <div class="card-title" id="ct1">
                 <span>One-page pagina</span>
               </div>
               <div class="card-text">
@@ -179,7 +179,7 @@
 
             <div class="portofolio-card" id="p-card2">
               <img src="Assets/desk-pic2.png" />
-              <div class="card-title">
+              <div class="card-title"  id="ct2">
                 <span>Multiple-page pagina</span>
               </div>
               <div class="card-text">
@@ -228,7 +228,7 @@
 
             <div class="portofolio-card" id="p-card3">
               <img src="Assets/desk-pic3.png" />
-              <div class="card-title">
+              <div class="card-title" id="ct3">
                 <span>Gallerij</span>
               </div>
               <div class="card-text">
@@ -387,28 +387,28 @@
           <div class="ec-bg">
             <p class="ec-header">Extra mogelijkheden</p>
             <div class="ec-banner">
-              <div class="ec-colorbox" id="cc-one"></div>
+              <div class="ec-colorbox" id="cc-one"><img src="Assets/SVG/globe-americas-fill.svg" width="50"></div>
               <p class="ec-text">
                 [€75] Domeinnaam registratie, Hosting & Publicatie.
               </p>
             </div>
 
             <div class="ec-banner">
-              <div class="ec-colorbox" id="cc-two"></div>
+              <div class="ec-colorbox" id="cc-two"><img src="Assets/SVG/hash.svg" width="70"></div>
               <p class="ec-text">
                 [€75] Optimalisatie van meta-tags, paginatitel, alt-teksten.
               </p>
             </div>
 
             <div class="ec-banner">
-              <div class="ec-colorbox" id="cc-three"></div>
+              <div class="ec-colorbox" id="cc-three"><img src="Assets/SVG/image.svg" width="50"></div>
               <p class="ec-text">
                 [€25] Eenmalige aanpassing van foto's en teksten.
               </p>
             </div>
 
             <div class="ec-banner">
-              <div class="ec-colorbox" id="cc-four"></div>
+              <div class="ec-colorbox" id="cc-four"><img src="Assets/SVG/search.svg" width="50"></div>
               <p class="ec-text">
                 [€49] Google Analytics | Elke maand jouw bezoekersdata op een
                 rij.
@@ -466,17 +466,41 @@
     <section class="contact-formulier">
       <div class="port-part">
         <div class="port-bg">
-          <span class="port-title">Contact</span>
-          <div class="form">
-            <form method="post" action="verzend.php">
-              <label>Je e-mailadres</label>
-              <input name="email" type="email">
-              <label>Onderwerp</label>
-              <input name="onderwerp" type="text">
-              <label>Vraag</label>
-              <input name="vraag" type="text">
-              <button >Verzend</button>
-            </form>
+        
+          <div class="contact-screen">
+            <div class="thank-you-screen">
+              <header class="logo-bg"><img class="logo" src="Assets/Logo/Logo.png" alt="Logo Bedrijf - IndexNest"></header>
+              <div class="contact-background"></div>
+            </div>
+            <div class="form-background">
+              <div class="form">
+                <form method="post" action="verzend.php">
+                  <div class="input-grid">
+                    <div class="input-contact">
+                      <label>Je e-mailadres</label>
+                      <input name="email" type="email" maxlength="100" />
+                    </div>
+
+                    <div class="input-contact">
+                      <label>Onderwerp</label>
+                      <input name="onderwerp" type="text" maxlength="100" />
+                    </div>
+
+                    <div class="input-contact">
+                      <label>Vraag</label>
+                      <textarea
+                        id="question-box"
+                        name="vraag"
+                        maxlength="500"
+                      ></textarea>
+                      <p id="character_count">Karakters over: 500</p>
+                    </div>
+                  </div>
+
+                  <button class="send-button">Verzend</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

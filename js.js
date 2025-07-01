@@ -5,9 +5,8 @@ function activateCard() {
     { triggerId: "p-card3", triggerCard: "po-card3" },
     { triggerId: "pr-card1", triggerCard: "pr-card1-overlay" },
     { triggerId: "pr-card2", triggerCard: "pr-card2-overlay" },
-    { triggerId: "pr-card3", triggerCard: "pr-card3-overlay" }
+    { triggerId: "pr-card3", triggerCard: "pr-card3-overlay" },
   ];
-
 
   hoverpairs.forEach(({ triggerId, triggerCard }) => {
     const trigger = document.getElementById(triggerId);
@@ -56,20 +55,27 @@ function prijzen() {
   });
 }
 
-function countchar(){
-  const question_box = document.querySelector('input[name="vraag"]');
+function countchar() {
+  const question_box = document.getElementById("question-box");
+  const character_count_text = document.getElementById("character_count");
   const max_len = 500;
-  const character_count_text = document.getElementById("character_count")
-  var character_count = 0
   question_box.addEventListener("input", () => {
-  
-  if(question_box.value.length < max_len){
-    character_count = max_len - question_box.value.length;
-    character_count_text.textContent = "karakters over: ${character_count}"
-  }
-  })
-}
+    const character_count = max_len - question_box.value.length;
+    character_count_text.textContent = `karakters over: ${character_count}`;
+  });
 
+  question_box.addEventListener("keydown", (e) => {
+    if (
+      question_box.value.length >= max_len &&
+      e.key !== "Backspace" &&
+      e.key !== "Delete" &&
+      !e.ctrlKey &&
+      !e.metaKey
+    ) {
+      e.preventDefault();
+    }
+  });
+}
 document.addEventListener("DOMContentLoaded", () => {
   activateCard();
   scrollAboutMe();

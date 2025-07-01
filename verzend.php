@@ -3,14 +3,24 @@
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $naar = "info@indexnest.nl";
 
-    $email = $_POST["email"] ?? "";
-    $onderwerp = $_POST["onderwerp"] ?? "";
-    $vraag = $_POST["vraag"] ?? "";
+    $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $onderwerp = htmlspecialchars($_POST["onderwerp"] ?? "");
+    $vraag = htmlspecialchars($_POST["vraag"] ?? "");
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        die("Ongeldig e-mailadres.");
+    }
+
+    if (preg_match("/[\r\n]/", $email) || preg_match("/[\r\n]/", $onderwerp)) {
+        die("Header injectie gedetecteerd.");
+    }
 
     echo "Formulier ontvangen van: $email";
 
-    $bericht = "$mail ontvangen van: $email\n\nonderwerp\ne\n$vraag";
+    $bericht = "Bericht ontvangen van: $email\n\nOnderwerp: $onderwerp\n\nVraag:\n$vraag";
 
-    mail($naar, $onderwerp, $bericht);
+    $headers = "From: $email";
+
+    mail($naar, $onderwerp, $bericht, $headers);
 }
 ?>
