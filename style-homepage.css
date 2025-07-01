@@ -163,8 +163,7 @@ h1 {
 #prijzenSection {
   scroll-margin-top: 50px;
 }
-.about-me-bg {
-}
+
 .about-me-container {
   display: flex;
   flex-direction: row;
@@ -592,9 +591,7 @@ h1 {
   font-size: 18px;
 }
 
-.contact-container{
 
-}
 
 .ec-explain{
   font-size: 16px;

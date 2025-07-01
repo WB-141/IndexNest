@@ -56,9 +56,24 @@ function prijzen() {
   });
 }
 
+function countchar(){
+  const question_box = document.querySelector('input[name="vraag"]');
+  const max_len = 500;
+  const character_count_text = document.getElementById("character_count")
+  var character_count = 0
+  question_box.addEventListener("input", () => {
+  
+  if(question_box.value.length < max_len){
+    character_count = max_len - question_box.value.length;
+    character_count_text.textContent = "karakters over: ${character_count}"
+  }
+  })
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   activateCard();
   scrollAboutMe();
   watMaakIk();
   prijzen();
+  countchar();
 });

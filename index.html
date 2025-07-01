@@ -467,8 +467,17 @@
       <div class="port-part">
         <div class="port-bg">
           <span class="port-title">Contact</span>
-          <p>Onderwerp</p>
-          <input />
+          <div class="form">
+            <form method="post" action="verzend.php">
+              <label>Je e-mailadres</label>
+              <input name="email" type="email">
+              <label>Onderwerp</label>
+              <input name="onderwerp" type="text">
+              <label>Vraag</label>
+              <input name="vraag" type="text">
+              <button >Verzend</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
