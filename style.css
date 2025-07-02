@@ -324,7 +324,7 @@ h1 {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .show {
@@ -560,6 +560,9 @@ h1 {
   margin-bottom: 10px;
 }
 
+.ec-bg {
+  margin-top: -5rem;
+}
 .ec-colorbox {
   display: flex;
   width: 100px;
@@ -567,6 +570,9 @@ h1 {
   justify-content: center;
 }
 
+.extra-costs {
+  display: flex;
+}
 #cc-one {
   background-color: #5f8f67;
 }
@@ -741,6 +747,7 @@ h1 {
 
   .hero-bg {
     width: 100vw;
+    margin-bottom: 4rem;
   }
   .hero-slogan {
     width: 20rem;
@@ -758,7 +765,7 @@ h1 {
 
   .text-grid-left {
     font-size: 1rem;
-    max-width: 16rem;
+    max-width: 26rem;
   }
 
   .text-grid-h {
@@ -781,7 +788,7 @@ h1 {
 
   .about-me-part {
     direction: flex;
-    height: 100rem;
+    height: 72rem;
   }
 
   .hoe-werk-ik {
@@ -805,6 +812,56 @@ h1 {
 
   .port-title {
     font-size: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+  }
+
+  .card-title > span {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .hidden-text-title {
+    font-size: 1rem;
+  }
+  .hidden-text-explain {
+    font-size: 0.9rem;
+  }
+
+  .hidden-prize-text-title{
+    font-size: 1rem;
+  }
+
+  .hidden-prize-text-explain{
+    margin-top: 0rem;
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+
+  .prijzen-card-title {
+    font-size: 1.1rem;
+  }
+
+  .prijzen-card-title > span {
+    font-size: 1rem;
+  }
+
+  .card-text > p {
+    font-size: 0.9rem;
+    max-width: 20rem;
+  }
+
+  .card-text-title {
+    font-size: 0.9rem;
+  }
+
+  .disclaimer {
+    margin-left: 3.2rem;
+    max-width: 24rem;
   }
 
   .text-grid-header {
@@ -832,40 +889,157 @@ h1 {
     position: absolute;
     border-radius: 2%;
     background: linear-gradient(#ffffff, #ffffff);
-    width: 2rem;
-    height: 7rem;
+    width: 24rem;
+    height: 36rem;
     top: 0;
     left: 0;
 
     animation: fade-in 0.3s ease-in-out;
   }
 
-  .portofolio-card{
-    width: 16rem;
-    height: 30rem;
-
+  .portofolio-card {
+    width: 24rem;
+    height: 40rem;
+    align-items: center;
+    position: relative;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#ffffff, #ffffff);
   }
 
-  .portofolio-card img{
-    width: 14rem;
+  .portofolio-card img {
+    width: 20rem;
     height: 14rem;
-    margin-bottom:0rem;
-    margin: 0px;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
   }
 
   .card-title {
-  display: flex;
-  font-size: 0.8rem;
-  padding: 10px;
-  margin-top: -5px;
-  margin-left: 30px;
-  margin-right: 30px;
-  color: rgb(251, 251, 251);
-}
-  .card-text-explain{
+    display: flex;
+    font-size: 0.8rem;
+    width: 20rem;
+    height: 3rem;
+    text-align: center;
+    padding: 10px;
+    margin-top: -5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: rgb(251, 251, 251);
+  }
+  .card-text-explain {
     font-size: 1rem;
   }
 
+  .ec-banner {
+    height: 5rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ec-colorbox {
+    height: 5rem;
+    min-width: 4rem;
+    max-width: 4rem;
+  }
+  .ec-part {
+    margin-left: 3.2rem;
+  }
+
+  .ec-bg {
+    margin-top: -6rem;
+  }
+
+  .ec-text {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    max-width: 15rem;
+    margin-bottom: 0.2rem;
+    margin-top: 1.2rem;
+    text-align: start;
+  }
+
+  .ec-header {
+    font-size: 1rem;
+  }
+
+  .ec-explain{
+    font-size: 0.9rem;
+    width: 22rem;
+    max-width: 100rem;
+  }
+
+  .ec-colorbox > img {
+    width: 2rem;
+    margin: 0px;
+  }
+  .extra-costs {
+    margin-top: -4rem;
+  }
+
+  .voorwaarden {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .contact-screen {
+    grid-template-columns: 1fr;
+    margin-top: 34rem;
+    display: block;
+  }
+
+  .contact-background {
+    height: 10rem;
+  }
+
+  .form-background {
+    display: flex;
+    height: 35rem;
+  }
+
+  .form{
+    display: flex;
+    height: 1rem;
+  }
+
+  .port-part{
+    
+  }
+
+  .input-grid {
+    margin-left: 1.2rem;
+    grid-template-rows: 0.1fr 0.2fr 0.55fr 0.1fr ;
+  }
+
+  .input-contact > label {
+    margin-bottom: 1rem;
+  }
+
+  #question-box {
+    height: 15rem;
+  }
+
+  .send-button {
+    margin: 0px;
+    position: relative;
+    margin-top: 1.3rem;
+    width: inherit;
+  }
+
+  .contact-part{
+    margin-top: -17rem;
+  }
+
+  .footer-part {
+    margin-top: 45rem;
+    height: 10rem;
+    display: block;
+  }
+
+  .footer-container{
+    height: 15rem;
+  }
   @keyframes fade-in {
     from {
       opacity: 0;

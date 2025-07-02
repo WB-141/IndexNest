@@ -381,8 +381,8 @@
           *Het ontwerpen wordt gestart na aanlevering van bijbehorende spullen
           vanuit de klant, denk aan teksten, logo's en afbeeldingen.
         </p>
-      </div>
-      <section class="ExtraCosts">
+
+        <section class="ExtraCosts">
         <div class="ec-part">
           <div class="ec-bg">
             <p class="ec-header">Extra mogelijkheden</p>
@@ -453,6 +453,8 @@
         </div>
       </section>
     </section>
+      </div>
+      
 
     <section>
       <!--Over mij onderdeel-->
@@ -464,7 +466,7 @@
     </section>
 
     <section class="contact-formulier">
-      <div class="port-part">
+      <div class="contact-part">
         <div class="port-bg">
         
           <div class="contact-screen">
@@ -474,7 +476,7 @@
             </div>
             <div class="form-background">
               <div class="form">
-                <form method="post" action="verzend.php">
+                <form method="post" action="verzend.php" class="form-container">
                   <div class="input-grid">
                     <div class="input-contact">
                       <label>Je e-mailadres</label>
@@ -494,10 +496,12 @@
                         maxlength="500"
                       ></textarea>
                       <p id="character_count">Karakters over: 500</p>
+                       <button class="send-button">Verzend</button>
                     </div>
+                   
                   </div>
 
-                  <button class="send-button">Verzend</button>
+                  
                 </form>
               </div>
             </div>
