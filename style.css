@@ -149,7 +149,7 @@ section {
   flex-direction: column;
   background-color: white;
   position: relative;
-  height: 60vh;
+  height: 70vh;
   padding: 1rem;
   margin-bottom: 5vh;
   width: auto;
@@ -262,7 +262,7 @@ section {
   display: flex;
   flex-direction: column;
   background-color: white;
-  height: 40vh;
+  height: 50vh;
   padding: 1rem;
   margin-bottom: 5vh;
   width: auto;
@@ -374,12 +374,12 @@ section {
 }
 
 .ec-header {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 
 .ec-explain {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .ecbanners {
@@ -435,8 +435,8 @@ section {
 
 .input-contact input {
   margin-bottom: 2vh;
-  width: 94%;
-  outline: solid 1px black;
+  width: 100%;
+
 }
 
 .input-contact label {
@@ -449,16 +449,13 @@ section {
 
 .input-contact input,
 .input-contact textarea {
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #999;
   font-family: inherit;
 }
 
 #question-box {
+  margin-top: -0.3rem;
   height: 35vh;
-
-  outline: solid 1px black;
+  width: 100%;
 }
 
 #character_count {
@@ -467,6 +464,7 @@ section {
 }
 
 .send-button {
+  font-family: "poppins";
   height: 4vh;
   background-color: white;
   outline: solid 1px black;
