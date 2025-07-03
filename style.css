@@ -115,8 +115,9 @@ section {
 .introductie-tekst > img {
   display: flex;
   padding-top: 3%;
-  width: 100%;
-
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 400px;
   min-height: 100%;
 
