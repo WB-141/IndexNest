@@ -2,7 +2,9 @@ body {
   background-color: #ededed;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -45,7 +47,7 @@ section {
 .hero-part {
   display: flex;
   background-color: #242424;
-  height: 90vh;
+  min-height: 90svh;
   margin: 0 -1rem;
   margin-top: -1rem;
 }
@@ -53,7 +55,8 @@ section {
 .hero-bg {
   display: flex;
   background: linear-gradient(#88ab8e, #afc8ad);
-  height: 90vh;
+  min-height: 90svh;
+  width: 100%;
 }
 
 .hero-text {
@@ -112,7 +115,7 @@ section {
   display: flex;
   padding-top: 3%;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -388,7 +391,7 @@ section {
 
 /*Contact formulier*/
 .contact-part {
-  height: 115vh;
+  height: 115svh;
   background-color: #c9c9c9;
   outline: black solid 1px;
 }
@@ -412,7 +415,6 @@ section {
 .contact-background-fade {
   position: absolute;
   display: flex;
-  position: absolute;
   z-index: 1; /* zorg dat hij erboven ligt */
   background-color: rgba(54, 54, 54, 0.701); /* evt met transparantie */
   width: 100%;
@@ -436,7 +438,6 @@ section {
 .input-contact input {
   margin-bottom: 2vh;
   width: 100%;
-
 }
 
 .input-contact label {
@@ -468,5 +469,5 @@ section {
   height: 4vh;
   background-color: white;
   outline: solid 1px black;
-  cursor: pointer; 
+  cursor: pointer;
 }
