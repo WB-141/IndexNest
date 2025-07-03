@@ -47,7 +47,7 @@ section {
 .hero-part {
   display: flex;
   background-color: #242424;
-  min-height: 90dvh;
+  min-height: 90svh;
   margin: 0 -1rem;
   margin-top: -1rem;
 }
@@ -55,7 +55,7 @@ section {
 .hero-bg {
   display: flex;
   background: linear-gradient(#88ab8e, #afc8ad);
-  min-height: 90dvh;
+  min-height: 90svh;
   width: 100%;
 }
 
@@ -391,7 +391,7 @@ section {
 
 /*Contact formulier*/
 .contact-part {
-  height: 115dvh;
+  height: 115svh;
   background-color: #c9c9c9;
   outline: black solid 1px;
 }
@@ -402,7 +402,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 25vh;
+  height: 25svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,7 +455,7 @@ section {
 
 #question-box {
   margin-top: -0.3rem;
-  height: 35vh;
+  height: 35svh;
   width: 100%;
 }
 
