@@ -160,6 +160,14 @@ section {
   width: auto;
 }
 
+.port-bg > h1{
+  font-size: 1.2rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -272,6 +280,7 @@ section {
   margin-bottom: 5vh;
   width: auto;
 }
+
 
 .price {
   font-weight: bold;
@@ -668,7 +677,7 @@ section {
 .input-contact input {
   margin-bottom: 2vh;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #fbfbfb;
   padding: 0.3rem;
   outline: 1px white
 }
@@ -676,8 +685,8 @@ section {
 .input-contact label {
   display: flex;
   font-size: 0.9rem;
-  background-color: #e9e8e8;
-  padding: 0.4rem;
+  background-color: #b5b4b4;
+  padding: 0.5rem;
   color: rgb(30, 30, 30);
   width: auto;
   outline: none;
@@ -703,7 +712,8 @@ section {
   color: black;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 100%;
+  text-align: center;
 }
 
 .send-button {
