@@ -115,8 +115,10 @@ section {
   display: flex;
   padding-top: 3%;
   width: 100%;
+
+  max-width: 400px;
   min-height: 100%;
-  margin-left: auto;
+
   margin-right: auto;
 }
 .hoe-werk-ik {
@@ -389,11 +391,242 @@ section {
   margin-bottom: 10%;
 }
 
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    scale: 0.95;
+  }
+  to {
+    opacity: 100;
+    scale: 1;
+  }
+}
+
+.portofolio-card > img {
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 0.9rem;
+  margin-top: -3%;
+  padding: 0.5rem;
+}
+
+#ct1 {
+  background-color: #c7dbb4;
+}
+
+#ct2 {
+  background-color: #dadbb4;
+}
+
+#ct3 {
+  background-color: #b4b4e0;
+}
+.card-hidden-text {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+.card-text-title {
+  display: block;
+  padding-left: 0.5rem;
+  margin-top: 7%;
+  font-size: 1rem;
+}
+
+.card-text-title > span {
+  color: #ce9a0b;
+  font-weight: 500;
+}
+
+.card-text-explain {
+  padding-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* overlay card */
+
+.hidden {
+  display: none !important;
+}
+
+.overlay-card {
+  display: flex;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 2%;
+  animation: fade-in 0.3s ease-in-out;
+}
+
+.card-hidden-text {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.hidden-text-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.hidden-text-explain {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.hidden-point-bold {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.hidden-points {
+  font-size: 0.8rem;
+}
+
+/*prize cards*/
+
+.prijzen-card {
+  border-radius: 2%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  min-height: 50svh;
+  padding: 1rem;
+  margin-bottom: 5vh;
+  width: auto;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0.8rem;
+}
+
+.prijzen-card-title {
+  padding: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#pricecard1 {
+  background-color: #c7dbb4;
+}
+
+#pricecard2 {
+  background-color: #dadbb4;
+}
+
+#pricecard3 {
+  background-color: #b4b4e0;
+}
+
+/*price card overlays*/
+.hidden-prijzen-card {
+  border-radius: 2%;
+  display: flex;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: fade-in 0.3s ease-in-out;
+}
+
+.prize-card-hidden-text {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden-prize-text-title {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.hidden-prize-text-explain {
+  font-size: 0.8rem;
+}
+
+.delivery-time-title {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.card-text > p {
+  font-size: 0.8rem;
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  padding-left: 1rem;
+  margin-bottom: 2%;
+}
+
+/* Extra costs */
+.ExtraCosts {
+  padding: 0px;
+}
+
+.ec-banner {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 3fr;
+  background-color: white;
+  width: 100%;
+  min-height: 10vh;
+  margin-bottom: 1rem;
+}
+
+.ec-colorbox {
+  min-height: 100%;
+  width: 50%;
+  background-color: #5f5f5f;
+  align-content: center;
+}
+
+.ec-text {
+  margin: 0;
+  margin-left: -5%;
+  height: auto;
+  font-size: 0.8rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 90%;
+}
+
+.ec-header {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.ec-explain {
+  font-size: 0.8rem;
+}
+
+.ecbanners {
+  margin-bottom: 10%;
+}
+
 /*Contact formulier*/
 .contact-part {
   height: 115svh;
-  background-color: #c9c9c9;
-  outline: black solid 1px;
+  background-color: #ffffff;
 }
 
 .contact-background {
@@ -416,7 +649,7 @@ section {
   position: absolute;
   display: flex;
   z-index: 1; /* zorg dat hij erboven ligt */
-  background-color: rgba(54, 54, 54, 0.701); /* evt met transparantie */
+  background-color: rgba(103, 103, 103, 0.701); /* evt met transparantie */
   width: 100%;
   height: 100%;
   top: 0;
@@ -425,7 +658,9 @@ section {
 .logo {
   width: 90%;
   position: relative;
+  margin-left: 5%;
   z-index: 2;
+  animation: pulse-scale 12s ease-in-out infinite;
 }
 
 .form-background {
@@ -438,14 +673,19 @@ section {
 .input-contact input {
   margin-bottom: 2vh;
   width: 100%;
+  background-color: #f1f1f1;
+  padding: 0.3rem;
+  outline: 1px white
 }
 
 .input-contact label {
   display: flex;
-  background-color: #242424;
+  font-size: 0.9rem;
+  background-color: #e9e8e8;
   padding: 0.4rem;
-  color: white;
+  color: rgb(30, 30, 30);
   width: auto;
+  outline: none;
 }
 
 .input-contact input,
@@ -454,8 +694,9 @@ section {
 }
 
 #question-box {
-  margin-top: -0.3rem;
+  outline: 1px solid black;
   height: 35svh;
+   background-color: #f1f1f1;
   width: 100%;
 }
 
@@ -464,10 +705,154 @@ section {
   font-size: 0.8rem;
 }
 
+.contact-formulier > h1{
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
 .send-button {
   font-family: "poppins";
-  height: 4vh;
-  background-color: white;
-  outline: solid 1px black;
+  height: 6vh;
+  width: 30%;
+  color: white;
+  background-color: rgb(23, 23, 23);
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+    padding: 2rem;
+  }
+
+  .header-logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 4rem;
+  }
+
+  .intr-part {
+    display: flex;
+    background-color: #242424;
+    height: 15vh;
+    margin: 0 -3rem;
+    margin-top: -3rem;
+    align-content: center;
+  }
+
+  /* Hero */
+
+  .hero-part {
+    display: flex;
+    background-color: #242424;
+    min-height: 90svh;
+    margin: 0 -3rem;
+  }
+
+  .hero-logo {
+    content: url(Assets/Logo/Logo.png);
+    width: 80%;
+    height: auto;
+  }
+
+  .hero-slogan {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* about me */
+
+  .introductie-tekst {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 10%;
+  }
+
+  .introductie-tekst > img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .align > img {
+    width: auto;
+    max-height: 310px;
+    max-width: 310px;
+  }
+
+  .align {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* portofolio */
+
+  .portofolio-card {
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text > p {
+    font-size: 0.9rem;
+  }
+
+  .port-title{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* prijzen card */
+
+  .prijzen-card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hidden-text-title {
+    font-size: 1.1rem;
+  }
+  .hidden-text-explain,
+  .hidden-points {
+    font-size: 1rem;
+  }
+
+  .disclaimer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*extracosts*/
+  .ec-banner {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .voorwaarden {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*contact*/
+  .contact-part {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
