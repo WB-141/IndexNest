@@ -96,6 +96,7 @@ section {
   color: white;
   padding-left: 0.5rem;
   font-size: 1.5rem;
+  width: 95%;
   font-weight: bold;
 }
 
@@ -111,7 +112,7 @@ section {
   width: 1.5rem;
   margin-right: 3%;
 }
-.text-grid-left > img {
+.introductie-tekst > img {
   display: flex;
   padding-top: 3%;
   width: 100%;
