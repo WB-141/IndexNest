@@ -47,7 +47,7 @@ section {
 .hero-part {
   display: flex;
   background-color: #242424;
-  min-height: 90svh;
+  min-height: 90dvh;
   margin: 0 -1rem;
   margin-top: -1rem;
 }
@@ -55,7 +55,7 @@ section {
 .hero-bg {
   display: flex;
   background: linear-gradient(#88ab8e, #afc8ad);
-  min-height: 90svh;
+  min-height: 90dvh;
   width: 100%;
 }
 
@@ -391,7 +391,7 @@ section {
 
 /*Contact formulier*/
 .contact-part {
-  height: 115svh;
+  height: 115dvh;
   background-color: #c9c9c9;
   outline: black solid 1px;
 }
