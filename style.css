@@ -12,6 +12,8 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   padding: 0rem;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Poppins";
 }
 
@@ -96,7 +98,7 @@ section {
   color: white;
   padding-left: 0.5rem;
   font-size: 1.5rem;
-  width: 95%;
+  width: 100%;
   font-weight: bold;
 }
 
@@ -115,13 +117,9 @@ section {
 .introductie-tekst > img {
   display: flex;
   padding-top: 3%;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 70%;
   max-width: 400px;
   min-height: 100%;
-
-  margin-right: auto;
 }
 .hoe-werk-ik {
   font-size: 0.9rem;
@@ -138,7 +136,7 @@ section {
 /*Portfolio*/
 .port-title {
   display: flex;
-  width: 97%;
+  width: 100%;
   background-color: #242424;
   color: #ededed;
   padding-top: 0.2rem;
@@ -342,11 +340,6 @@ section {
   font-size: 0.8rem;
 }
 
-.disclaimer {
-  font-size: 0.8rem;
-  padding-left: 1rem;
-  margin-bottom: 2%;
-}
 
 /* Extra costs */
 .ExtraCosts {
@@ -577,7 +570,7 @@ section {
 .disclaimer {
   font-size: 0.8rem;
   padding-left: 1rem;
-  margin-bottom: 2%;
+  margin-bottom: 12%;
 }
 
 /* Extra costs */
