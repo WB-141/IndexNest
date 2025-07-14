@@ -30,5 +30,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Verstuur mail
     mail($naar, $onderwerp, $bericht, $headers);
+
+    header("Location: index.html");
+exit();
+
 }
 ?>

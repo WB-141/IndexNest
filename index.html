@@ -3,548 +3,706 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IndexNest | Websites voor zzp'ers</title>
+    <link rel="icon" href="Assets/favicon.png" />
+    <link rel="stylesheet" href="style1.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="Assets/Logo/favicon.png" />
-    <title>IndexNest | Websites op maat voor zzp’ers & freelancers</title>
-    <meta
-      name="description"
-      content="Ik bouw stijlvolle, snelle websites voor zelfstandigen, creatieve ondernemers en freelancers. Ontdek de pakketten en prijzen van IndexNest."
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta
+      name="keywords"
+      content="webdesign, website bouwen, zzp website, Bovenkarspel, webdeveloper, betaalbare website, professionele website"
+    />
+    <meta name="author" content="Ruben - IndexNest" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="IndexNest | Websites voor zzp'ers" />
+    <meta
+      property="og:description"
+      content="Websites voor zzp'ers in Bovenkarspel. Binnen 10 werkdagen klaar. Betaalbaar, professioneel, zonder gedoe."
+    />
+    <meta property="og:image" content="Assets/Logo.png" />
+    <meta property="og:url" content="https://indexnest.nl" />
+    <link rel="canonical" href="https://indexnest.nl" />
   </head>
-
   <body>
-    <header>
-      <div class="intr-part">
-        <img src="Assets/Logo/Short-logo.png" class="header-logo" />
-        <div class="intr-nav">
-          <div class="intr-buttons">
-            <div class="intr-button" id="intr-button1">
-              <a href="#" id="aboutme-button">Over mij</a>
-            </div>
-
-            <div class="intr-button" id="intr-button2">
-              <a href="#" id="watMaakIk-button">Wat maak ik</a>
-            </div>
-
-            <div class="intr-button" id="intr-button3">
-              <a href="#portfolio" id="prijzen-button">Prijzen</a>
-            </div>
-
-            <div class="intr-button" id="intr-button4">
-              <a href="#skills" class="intr-link">Veel gestelde vragen</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <main>
       <div class="hero-part">
         <div class="hero-bg">
-          <div class="hero-text">
-            <h1 class="hero-logo">
-              <img
-                src="Assets/Logo/Logo.png"
-                alt="IndexNest – Making Websites"
-              />
-            </h1>
-            <img class="hero-slogan" src="Assets/Logo/Slogan.png" />
-
-            <div id="time"></div>
+          <div class="hero-bg-overlay">
+            <div class="hero-align">
+              <div class="hero-logo">
+                <img
+                  src="Assets/Logo.png"
+                  alt="Logo IndexNest"
+                  data-aos="fade-right"
+                />
+              </div>
+              <h2 class="slogan-text">Je website klaar binnen 10 werkdagen</h2>
+              <p>scroll omlaag voor info</p>
+              <img src="svg/arrow-down.svg" class="arrow-down" />
+            </div>
           </div>
         </div>
       </div>
-    </header>
+      <div class="introduction-page">
+        <div class="introduction-bg">
+          <div class="introduction-gradient">
+            <h1>Webdeveloper Bovenkarspel</h1>
+            <div class="introduction-container">
+              <h2 data-aos="fade-right">
+                Wat je <span style="color: #b9d29a">kunt</span> verwachten
+              </h2>
+              <div class="portfolio-showcase slider">
+                <a href="portfolio1/index.html"
+                  ><img src="Assets/Banner.png" class="slider-image"
+                /></a>
 
-    <section id="aboutMeSection">
-      <!--Over mij onderdeel-->
-      <div class="about-me-part">
-        <div class="about-me-bg">
-          <h1 class="about-me-title">Front-end Web Developer</h1>
-          <div class="about-me-container">
-            <div class="text-grid-h">
-              <div class="text-grid-left">
-                <div>
-                  <span class="text-grid-header"
-                    ><img
-                      src="Assets/SVG/search.svg"
-                      class="svg-text-header"
-                    />Wie ben ik?</span
+                <img src="Assets/BannerFake.png" class="slider-image" />
+              </div>
+
+              <p style="font-size: 0.9rem">
+                Klik op bovenstaande foto voor voorbeeld websites
+              </p>
+
+              <div class="icon-holders">
+                <div class="icon-container" data-aos="fade-right">
+                  <div class="icon-holder">
+                    <div class="icon-holder-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50%"
+                        height="50%"
+                        fill="#a1bb82"
+                        class="bi bi-display"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2>Professionele Website</h2>
+                  <span
+                    >Jouw website wordt vlot en professioneel gebouwd, zonder in
+                    te leveren op uitstraling of gebruiksgemak.</span
                   >
-                  <div class="introductie-tekst">
-                    <p class="hoe-werk-ik">
-                      Tijdens een gratis intake neem ik je in 15 minuten mee in
-                      hoe ik werk. Ik laat je zeven tot tien ontwerpen zien die
-                      ik zelf heb gemaakt. Je kiest wat je aanspreekt en van
-                      daaruit pas ik het aan tot het perfect bij jouw bedrijf
-                      past. Kleine aanpassingen zijn geen probleem. Ik werk
-                      alleen binnen de gekozen template zodat het betaalbaar
-                      blijft en snel af is.
+                </div>
+
+                <div class="icon-container" data-aos="fade-right">
+                  <div class="icon-holder">
+                    <div class="icon-holder-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50%"
+                        height="50%"
+                        fill="#a1bb82"
+                        class="bi bi-box-seam-fill"
+                        viewBox="0 0 16 16"
+                        aria-label=""
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2>Betaalbaar</h2>
+                  <span
+                    >Websites vanaf €399. Dankzij zelfontworpen sjablonen blijft
+                    jouw website betaalbaar, zonder in te leveren op
+                    kwaliteit.</span
+                  >
+                </div>
+
+                <div class="icon-container" data-aos="fade-right">
+                  <div class="icon-holder">
+                    <div class="icon-holder-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50%"
+                        height="50%"
+                        fill="#a1bb82"
+                        class="bi bi-lightning-charge-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2>Snelle levering</h2>
+                  <span
+                    >We streven ernaar om je website binnen 10 werkdagen
+                    host-klaar te leveren.</span
+                  >
+                </div>
+
+                <div class="icon-container" data-aos="fade-right">
+                  <div class="icon-holder">
+                    <div class="icon-holder-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50%"
+                        height="50%"
+                        fill="#a1bb82"
+                        class="bi bi-search"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2>Transparant</h2>
+                  <span id="margin-bottom"
+                    >Gedurende het proces blijven wij transparant over de
+                    ontwikkelingen.</span
+                  >
+                </div>
+              </div>
+              <button class="cto-button" id="pakket">
+                Kies jouw <strong style="color: yellow">pakket</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="Werkwijze">
+        <div class="werkwijze-part" id="profile-bg">
+          <div class="faq-square" id="pf-square1"></div>
+          <div class="faq-square" id="pf-square2"></div>
+          <h2 class="werkwijze-header">Wie ben ik?</h2>
+          <div class="background-pf">
+            <img
+              class="profile"
+              src="Assets/PF.png"
+              alt="foto van eigenaar met kat op schouder"
+              data-aos="fade-right"
+            />
+            <span data-aos="fade-right" class="profile-text"
+              >Hey, ik ben Ruben. In mijn vrije tijd geniet ik ervan om te
+              coderen, wat voor mij de ideale manier is om mijn creativiteit tot
+              uiting te brengen. Met mijn vaardigheden sta ik klaar om je te
+              helpen bij het creëren van een aantrekkelijke en doelgerichte
+              website.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="watleverik">
+        <div class="watleverik-part">
+          <h2 class="wl-header">De juiste site voor jouw zaak</h2>
+
+          <div class="watleverik-bg">
+            <div class="icon-holders" id="pages">
+              <span data-aos="fade-right" style="color: #efefef"
+                >Pakk<span style="color: #b9d29a">etten</span></span
+              >
+              <div class="page-options">
+                <div class="icon-container" data-aos="fade-right">
+                  <div class="icon-holder" id="onepage">
+                    <div class="icon-holder-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50%"
+                        height="50%"
+                        fill="#a1bb82"
+                        class="bi bi-file-earmark-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2 style="color: #b9d29a">One-page pagina (€399)</h2>
+                  <span
+                    >Een compacte, moderne website met alle belangrijke
+                    informatie overzichtelijk op één pagina. Perfect voor
+                    portfolio's, evenementen of kleine bedrijven.</span
+                  >
+                </div>
+
+                <div class="icon-container" data-aos="fade-right">
+                  <div class="icon-holder" id="multipage">
+                    <div class="icon-holder-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50%"
+                        height="50%"
+                        fill="#a1bb82"
+                        class="bi bi-file-earmark-plus-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2 style="color: #b9d29a">Multi-page pagina (€599)</h2>
+                  <span
+                    >Een uitgebreide website met meerdere pagina’s zoals Home,
+                    Over Ons en Contact. Ideaal voor betere vindbaarheid in
+                    Google (SEO) en meer inhoud.</span
+                  >
+                </div>
+
+                <div class="icon-container" data-aos="fade-right">
+                  <div class="icon-holder" id="galery">
+                    <div class="icon-holder-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50%"
+                        height="50%"
+                        fill="#a1bb82"
+                        class="bi bi-file-earmark-image-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707v5.586l-2.73-2.73a1 1 0 0 0-1.52.127l-1.889 2.644-1.769-1.062a1 1 0 0 0-1.222.15L2 12.292V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2zm-1.498 4a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"
+                        />
+                        <path
+                          d="M10.564 8.27 14 11.708V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-.293l3.578-3.577 2.56 1.536 2.426-3.395z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2 style="color: #b9d29a">Galerij pagina (€899)</h2>
+                  <span
+                    >Een website met een aparte galerijpagina om je foto's of
+                    projecten stijlvol te presenteren. Ideaal voor fotografen,
+                    creatievelingen of bedrijven met visueel werk.</span
+                  >
+                </div>
+              </div>
+
+              <button class="cto-button" id="offerte">
+                Vrijblijvend een <strong style="color: yellow">offerte</strong>
+              </button>
+
+              <span data-aos="fade-right" style="color: #efefef"
+                >Keuze-<span style="color: #e1a1a1">opties</span></span
+              >
+
+              <div class="package-list">
+                <div class="icon-container" data-aos="fade-right">
+                  <div class="icon-holder" id="addpackage">
+                    <div class="icon-holder-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50%"
+                        height="50%"
+                        fill="#e1a1a1"
+                        class="bi bi-hdd-network-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h5.5v3A1.5 1.5 0 0 0 6 11.5H.5a.5.5 0 0 0 0 1H6A1.5 1.5 0 0 0 7.5 14h1a1.5 1.5 0 0 0 1.5-1.5h5.5a.5.5 0 0 0 0-1H10A1.5 1.5 0 0 0 8.5 10V7H14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2 style="color: #e1a1a1">Hosting (€75)*</h2>
+                  <span>
+                    Hulp bij het online zetten van je website. Snel en zorgeloos
+                    geregeld voor een kleine meerprijs.</span
+                  >
+                </div>
+
+                <div class="icon-container" data-aos="fade-right">
+                  <div class="icon-holder" id="addpackage">
+                    <div class="icon-holder-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50%"
+                        height="50%"
+                        fill="#e1a1a1"
+                        class="bi bi-pencil-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2 style="color: #e1a1a1">Aanpassingen maken (€20)*</h2>
+                  <span
+                    >Kleine aanpassingen achteraf aan tekst, afbeeldingen of
+                    indeling van je website. Snel en eenvoudig geregeld tegen
+                    een vast tarief.</span
+                  >
+                </div>
+
+                <div class="icon-container" data-aos="fade-right">
+                  <div class="icon-holder" id="addpackage">
+                    <div class="icon-holder-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50%"
+                        height="50%"
+                        fill="#e1a1a1"
+                        class="bi bi-pie-chart-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778zM8.5.015V7.5h7.485A8 8 0 0 0 8.5.015"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2 style="color: #e1a1a1">Google Analytics (€50)*</h2>
+                  <span>
+                    Wil je weten wie je website bezoekt, hoe mensen navigeren en
+                    waar je bereik vandaan komt? Ik lees de statistieken voor je
+                    uit en vertaal ze naar duidelijke inzichten.
+                  </span>
+                </div>
+
+                <div class="icon-container" data-aos="fade-right">
+                  <div class="icon-holder" id="addpackage">
+                    <div class="icon-holder-bg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="50%"
+                        height="50%"
+                        fill="#e1a1a1"
+                        class="bi bi-bar-chart-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <h2 style="color: #e1a1a1">SEO Optimaliseren (€50)*</h2>
+                  <span>
+                    Verbeter de vindbaarheid van je website in zoekmachines
+                    zoals Google. Inclusief optimalisatie van titels, teksten en
+                    structuur voor betere online zichtbaarheid.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="accoridion-faq">
+        <div class="accordion-bg">
+          <div class="faq">
+            <div class="faq-square"></div>
+            <div class="faq-square" id="faq-square2"></div>
+            <div class="faq-board">
+              <div class="faq-title"><h2>FAQ</h2></div>
+              <div class="faq-items">
+                <div class="question">
+                  <p class="faq-question">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      style="
+                        margin-right: 1.5%;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        animation: dot-faq 5s ease-in-out infinite;
+                      "
+                      fill="currentColor"
+                      class="bi bi-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <circle cx="8" cy="8" r="8" />
+                    </svg>
+                    Wanneer begin je met ontwerpen?
+                  </p>
+                  <div class="faq-answer">
+                    <p>
+                      Ik begin met het ontwerpen van je website zodra ik alle
+                      benodigde media van je heb ontvangen.
                     </p>
-
-                    <img src="Assets/PF.png" />
                   </div>
                 </div>
-
-                <div>
-                  <span class="text-grid-header"
-                    ><img src="Assets/SVG/pen.svg" class="svg-text-header" />Hoe
-                    werk ik?</span
-                  >
-                  <p class="hoe-werk-ik">
-                    Tijdens een gratis intake neem ik je in 15 minuten mee in
-                    hoe ik werk. Ik laat je zeven tot tien ontwerpen zien die ik
-                    zelf heb gemaakt. Je kiest wat je aanspreekt en van daaruit
-                    pas ik het aan tot het perfect bij jouw bedrijf past. Kleine
-                    aanpassingen zijn geen probleem. Ik werk alleen binnen de
-                    gekozen template zodat het betaalbaar blijft en snel af is.
+                <div class="question">
+                  <p class="faq-question" id="question-uneven">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      style="
+                        margin-right: 1.5%;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        animation: dot-faq 5s ease-in-out infinite;
+                      "
+                      fill="currentColor"
+                      class="bi bi-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <circle cx="8" cy="8" r="8" />
+                    </svg>
+                    Hoe lever ik de media aan jou aan?
                   </p>
-                </div>
-              </div>
-
-              <div class="text-grid-right">
-                <span class="text-grid-header"
-                  ><img
-                    src="Assets/SVG/palette.svg"
-                    class="svg-text-header"
-                  />Waarom ik bouw voor het web</span
-                >
-                <span class="text-grid-text"
-                  >Drie jaar geleden begon ik met het leren van de
-                  programmeertaal C#. Deze taal wordt vaak gebruikt voor game
-                  development, iets wat me enorm veel energie gaf: je ideeën
-                  razendsnel omzetten naar speelbare personages is magisch. Toch
-                  groeide ik langzaam uit die hobby. Game development kost
-                  ontzettend veel tijd, en dat maakte het lastig om projecten
-                  echt af te ronden. Web development bleek voor mij het perfecte
-                  alternatief.</span
-                >
-
-                <span class="text-grid-text">
-                  Ik kan nog steeds mijn creativiteit kwijt en ideeën visueel
-                  maken, maar in een veel korter tijdsbestek. Creativiteit
-                  uitdrukken via code blijft voor mij een groot plezier.
-                  Hopelijk kan ik die passie inzetten om jou te helpen aan een
-                  sterke, professionele website.</span
-                >
-              </div>
-
-              <div>
-                <div class="text-grid-right"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-under-picture"></div>
-      </div>
-    </section>
-    <section id="watMaakIkSection">
-      <div class="port-part">
-        <div class="port-bg">
-          <span class="port-title">Wat maak ik</span>
-                    <h1>Klik om jouw perfecte design te vinden</h1>
-          <div class="port-section">
-            <div class="portofolio-card" id="p-card1">
-              <img src="Assets/Desk-pic1.png" />
-              <div class="card-title" id="ct1">
-                <span>One-page pagina</span>
-              </div>
-              <div class="card-text">
-                <span class="card-text-title"
-                  >Alle <span class="bold-text">informatie</span> op een
-                  pagina.</span
-                >
-                <p class="card-text-explain">
-                  Een korte introductie van je bedrijf of jezelf, je diensten of
-                  tarieven, contactgegevens en een handig formulier. Alles op
-                  één overzichtelijke pagina waar bezoekers snel vinden wat ze
-                  zoeken.
-                </p>
-              </div>
-
-              <div class="overlay-card hidden" id="po-card1">
-                <div class="card-hidden-text">
-                  <span class="hidden-text-title"
-                    >Waarom een one-page pagina?</span
-                  >
-                  <span class="hidden-text-explain"
-                    >Een one-page website kan uitstekend dienen als online
-                    visite kaartje, of een plek waar klanten snel in contact
-                    kunnen komen met je. Met alle info op een pagina te vinden
-                    is het voor de bezoeker enorm makkelijk!
-                  </span>
-                  <div class="hidden-card-list">
-                    <div class="check-mark">
-                      <p class="hidden-point-bold">Voordelen</p>
-                      <p class="hidden-points">✓ Eenvoudig navigeren</p>
-                      <p class="hidden-points">✓ Top lay-out voor telefoon</p>
-                      <p class="hidden-points">✓ Geschikt voor storytelling</p>
-                      <p class="hidden-points"></p>
-                      <p class="hidden-point-bold">Nadelen</p>
-                      <p class="hidden-points">- Beperkt SEO</p>
-                      <p class="hidden-points">- Een gauw te drukke website</p>
-                      <p class="hidden-points">- Moeilijk schaalbaar</p>
-                    </div>
+                  <div class="faq-answer">
+                    <p>
+                      Je kunt de media (zoals teksten, foto's en je logo)
+                      aanleveren via e-mail of via WeTransfer.
+                    </p>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="portofolio-card" id="p-card2">
-              <img src="Assets/desk-pic2.png" />
-              <div class="card-title" id="ct2">
-                <span>Multiple-page pagina</span>
-              </div>
-              <div class="card-text">
-                <span class="card-text-title">
-                  Je
-                  <span class="bold-text">informatie</span> verdeeld.
-                </span>
-                <p class="card-text-explain">
-                  Denk aan een aparte pagina voor je diensten of tarieven, een
-                  duidelijke 'Over mij' of bedrijfsintroductie, en een
-                  contactpagina met formulier. Ideaal voor wie meer structuur of
-                  inhoud nodig heeft.
-                </p>
-              </div>
-
-              <div class="overlay-card hidden" id="po-card2">
-                <div class="card-hidden-text">
-                  <span class="hidden-text-title"
-                    >Waarom een multiple-page pagina?</span
-                  >
-
-                  <span class="hidden-text-explain"
-                    >Een website met meerdere pagina’s biedt structuur en
-                    duidelijkheid. Doordat je de informatie kunt verdelen over
-                    losse pagina’s, vinden bezoekers makkelijker wat ze zoeken.
-                    Denk aan een aparte ‘Over mij’, dienstenpagina of
-                    contactformulier. Een multiple-page website is daarom ideaal
-                    voor wie meer inhoud wil delen, zonder dat het
-                    onoverzichtelijk wordt.
-                  </span>
-                  <div class="hidden-card-list">
-                    <div class="check-mark">
-                      <p class="hidden-point-bold">Voordelen</p>
-                      <p class="hidden-points">✓ Betere SEO</p>
-                      <p class="hidden-points">✓ Schaalbaar</p>
-                      <p class="hidden-points">✓ Traditionele navigatie</p>
-                      <p class="hidden-points"></p>
-                      <p class="hidden-point-bold">Nadelen</p>
-                      <p class="hidden-points">- Langzamere laadtijd</p>
-                      <p class="hidden-points">- Meer kans op afleiding</p>
-                    </div>
+                <div class="question">
+                  <p class="faq-question">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      style="
+                        margin-right: 1.5%;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        animation: dot-faq 5s ease-in-out infinite;
+                      "
+                      fill="currentColor"
+                      class="bi bi-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <circle cx="8" cy="8" r="8" />
+                    </svg>
+                    Hoe werkt de betaling?
+                  </p>
+                  <div class="faq-answer">
+                    <p>
+                      Ik werk met een aanbetaling van 50%. Zodra de website af
+                      is, lopen we deze samen door. Tevreden? Dan betaal je het
+                      resterende bedrag en ontvang je van mij de complete
+                      website.
+                    </p>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="portofolio-card" id="p-card3">
-              <img src="Assets/desk-pic3.png" />
-              <div class="card-title" id="ct3">
-                <span>Gallerij</span>
-              </div>
-              <div class="card-text">
-                <span class="card-text-title">
-                  Een visuele <span class="bold-text">gallerij</span> om je werk
-                  te laten zien.
-                </span>
-                <p class="card-text-explain">
-                  Ideaal voor creatieve beroepen. Toon je werk in een strakke
-                  fotoweergave, eventueel met filters of categorieën voor
-                  overzicht.
-                </p>
-              </div>
-
-              <div class="overlay-card hidden" id="po-card3">
-                <div class="card-hidden-text">
-                  <span class="hidden-text-title">Waarom een gallerij?</span>
-
-                  <span class="hidden-text-explain"
-                    >Een gallerij-pagina legt de focus op jouw werk in beeld.
-                    Bezoekers zien foto's of projecten overzichtelijk in een
-                    grid, albums of sliders. Ideaal voor creatieve professionals
-                    zoals fotografen, ontwerpers of stylisten. Met één klik
-                    krijg je indruk; een gallerij laat visuele impact het
-                    verhaal vertellen.
-                  </span>
-                  <div class="hidden-card-list">
-                    <div class="check-mark">
-                      <p class="hidden-point-bold">Voordelen</p>
-                      <p class="hidden-points">
-                        ✓ Professioneel en visueel sterk
-                      </p>
-                      <p class="hidden-points">
-                        ✓ Structuur via albums of categorieën
-                      </p>
-                      <p class="hidden-points">
-                        ✓ Perfect geschikt om werk constant te updaten
-                      </p>
-                      <p class="hidden-points"></p>
-                      <p class="hidden-point-bold">Nadelen</p>
-                      <p class="hidden-points">- Tragere pagina’s</p>
-                      <p class="hidden-points">- Beperkte content voor SEO</p>
-                    </div>
+                <div class="question">
+                  <p class="faq-question" id="question-uneven">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      style="
+                        margin-right: 1.5%;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        animation: dot-faq 5s ease-in-out infinite;
+                      "
+                      fill="currentColor"
+                      class="bi bi-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <circle cx="8" cy="8" r="8" />
+                    </svg>
+                    Help je bij hosting?
+                  </p>
+                  <div class="faq-answer">
+                    <p>
+                      Webhosting is niet inbegrepen in de prijs, maar ik help je
+                      graag met het opzetten ervan (bijvoorbeeld via TransIP).
+                      De hostingkosten zijn jaarlijks en worden apart in
+                      rekening gebracht.
+                    </p>
+                  </div>
+                </div>
+                <div class="question">
+                  <p class="faq-question">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      style="
+                        margin-right: 1.5%;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        animation: dot-faq 5s ease-in-out infinite;
+                      "
+                      fill="currentColor"
+                      class="bi bi-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <circle cx="8" cy="8" r="8" />
+                    </svg>
+                    Hoelang duurt het maken van een website?
+                  </p>
+                  <div class="faq-answer">
+                    <p>
+                      Door te werken met eigen templates kan ik een website
+                      doorgaans binnen 10 werkdagen afronden.
+                    </p>
+                  </div>
+                </div>
+                <div class="question">
+                  <p class="faq-question" id="question-uneven">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      style="
+                        margin-right: 1.5%;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        animation: dot-faq 5s ease-in-out infinite;
+                      "
+                      fill="currentColor"
+                      class="bi bi-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <circle cx="8" cy="8" r="8" />
+                    </svg>
+                    Hoe gaat het ontwerp proces?
+                  </p>
+                  <div class="faq-answer">
+                    <p>
+                      Tijdens een online intakegesprek bekijken we samen mijn
+                      templates. We kiezen een passende kleurencompositie en
+                      bepalen wat het beste aansluit bij jouw bedrijf. Zodra we
+                      daar akkoord over hebben én jij de benodigde media hebt
+                      aangeleverd, begin ik met het ontwerp.
+                    </p>
+                  </div>
+                </div>
+                <div class="question">
+                  <p class="faq-question">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      style="
+                        margin-right: 1.5%;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        animation: dot-faq 5s ease-in-out infinite;
+                      "
+                      fill="currentColor"
+                      class="bi bi-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <circle cx="8" cy="8" r="8" />
+                    </svg>
+                    Kan ik zelf nog de website later aanpassen?
+                  </p>
+                  <div class="faq-answer">
+                    <p>
+                      Zelf aanpassingen doen is niet mogelijk. Kleine tekstuele
+                      of visuele wijzigingen voer ik voor je uit tegen een
+                      vergoeding van €25.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="port-container"></div>
-      </div>
-    </section>
+      </section>
+      <section id="contact">
+        <div class="contact-cover"></div>
+        <div class="contact-part">
+          <div class="contact-bg">
+            <img src="Assets/Logo.png" class="contact-logo" />
+            <div class="grid-contact">
+              <form method="post" action="verzend.php" class="form-container">
+                <div class="input-grid">
+                  <div class="input-contact">
+                    <label>Je e-mailadres</label>
+                    <input name="email" type="email" maxlength="100" />
+                  </div>
 
-    <section id="prijzenSection">
-      <div class="port-part">
-        <div class="port-bg">
-          <span class="port-title">Prijzen</span>
-          <h1>Professioneel en betaalbaar</h1>
-          <div class="port-section">
-            <div class="prijzen-card" id="pr-card1">
-              <p class="price">€399</p>
-              <div class="prijzen-card-title" id="pricecard1">
-                <!--Dit is een price-card-->
-                <span>One-page pagina </span>
-              </div>
-              <div class="card-text">
-                <span class="delivery-time-title"
-                  >Verwachten levertijd van 5 werkdagen*</span
-                >
-                <p>
-                  Een compacte website met alle belangrijke info op één pagina.
-                  Snel gebouwd, dus vriendelijk geprijsd.
-                </p>
-              </div>
-              <div class="hidden-prijzen-card hidden" id="pr-card1-overlay">
-                <div class="prize-card-hidden-text">
-                  <span class="hidden-prize-text-title"
-                    >Wat krijg je voor de prijs?</span
-                  >
-                  <p class="hidden-prize-text-explain">
-                    Voor de prijs zichtbaar krijg je de website aangeleverd in
-                    code formaat. Wil je dat ik je help bij andere dingen dan
-                    kan dat voor een kleine meer prijs.
-                  </p>
-                  <p class="hidden-prize-text-explain">
-                    Deze pagina’s zijn perfect voor starters of ondernemers die
-                    snel online willen zijn. Ze worden vaak ingezet voor
-                    portfolio’s, tijdelijke acties of lanceringen.
-                  </p>
-                </div>
-              </div>
-            </div>
+                  <div class="input-contact">
+                    <label>Onderwerp</label>
+                    <input
+                      name="onderwerp"
+                      type="text"
+                      maxlength="100"
+                      id="subject"
+                    />
+                  </div>
 
-            <div class="prijzen-card" id="pr-card2">
-              <p class="price">€599-799</p>
-              <div class="prijzen-card-title" id="pricecard2">
-                <!--Dit is een price-card-->
-                <span>Multiple-page pagina </span>
-              </div>
-              <div class="card-text">
-                <span class="delivery-time-title"
-                  >Verwachte levertijd: 5 werkdagen*</span
-                >
-                <p>
-                  Een complete website met meerdere pagina’s voor bijvoorbeeld
-                  bijvoorbeeld een homepage, dienstenpagina en contactformulier.
-                  Ideaal als je wat meer info kwijt wilt dan op één pagina past.
-                </p>
-              </div>
-              <div class="hidden-prijzen-card hidden" id="pr-card2-overlay">
-                <div class="prize-card-hidden-text">
-                  <span class="hidden-prize-text-title"
-                    >Wat krijg je voor de prijs?</span
-                  >
-                  <p class="hidden-prize-text-explain">
-                    Voor de prijs zichtbaar krijg je de website aangeleverd in
-                    code formaat. Wil je dat ik je help bij andere dingen dan
-                    kan dat voor een kleine meer prijs.
-                  </p>
-
-                  <p class="hidden-prize-text-explain">
-                    Deze websites zijn handig voor bedrijven of zzp’ers die
-                    professioneel voor de dag willen komen. Ze geven je ruimte
-                    om alles goed uit te leggen, en zorgen voor overzicht voor
-                    je bezoekers.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="prijzen-card" id="pr-card3">
-              <p class="price">€799-€999</p>
-              <div class="prijzen-card-title" id="pricecard3">
-                <!--Dit is een price-card-->
-                <span>Gallerij pagina </span>
-              </div>
-              <div class="card-text">
-                <span class="delivery-time-title"
-                  >Verwachte levertijd: 5 tot 10 werkdagen*</span
-                >
-                <p>
-                  Een visuele pagina voor je werk of projecten. Ideaal als je
-                  visueel wil laten zien wat je doet, maakt of aanbiedt.
-                </p>
-              </div>
-              <div class="hidden-prijzen-card hidden" id="pr-card3-overlay">
-                <div class="prize-card-hidden-text">
-                  <span class="hidden-prize-text-title"
-                    >Wat krijg je voor de prijs?</span
-                  >
-                  <p class="hidden-prize-text-explain">
-                    De genoemde prijs is voor oplevering in codeformaat. Wil je
-                    hulp met hosting, domeinnaam of publicatie? Dat kan tegen
-                    een kleine meerprijs.
-                  </p>
-                  <p class="hidden-prize-text-explain">
-                    Perfect voor fotografen, ontwerpers, creatievelingen of
-                    ondernemers met producten of cases. Je bezoekers krijgen in
-                    één oogopslag een goed beeld van je werk.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="disclaimer">
-          *Het ontwerpen wordt gestart na aanlevering van bijbehorende spullen
-          vanuit de klant, denk aan teksten, logo's en afbeeldingen.
-        </p>
-
-        <div class="ExtraCosts">
-          <div class="ec-part">
-            <div class="ec-bg">
-              <p class="port-title">Extra mogelijkheden</p>
-              <div class="ec-banner">
-                <div class="ec-colorbox" id="cc-one"></div>
-                <p class="ec-text">
-                  [€75] Domeinnaam registratie, Hosting & Publicatie.
-                </p>
-              </div>
-              <div class="ecbanners">
-                <div class="ec-banner">
-                  <div class="ec-colorbox" id="cc-two"></div>
-                  <p class="ec-text">
-                    [€75] Optimalisatie van meta-tags, paginatitel, alt-teksten.
-                  </p>
-                </div>
-
-                <div class="ec-banner">
-                  <div class="ec-colorbox" id="cc-three"></div>
-                  <p class="ec-text">
-                    [€25] Eenmalige aanpassing van foto's en teksten.
-                  </p>
-                </div>
-
-                <div class="ec-banner">
-                  <div class="ec-colorbox" id="cc-four"></div>
-                  <p class="ec-text">
-                    [€49] Eenmalig uitlezing van Google Analytics.
-                  </p>
-                </div>
-              </div>
-              <div class="voorwaarden">
-                <div>
-                  <p class="ec-header">Wat zit er in het pakket?</p>
-                  <p class="ec-explain">
-                    Je ontvangt van mij de complete bestanden van je website
-                    (HTML, CSS en JS). Dit is de motor van je site: helemaal
-                    werkend en klaar om online te zetten. Hosting is niet
-                    inbegrepen, maar ik help je daar graag mee tegen een kleine
-                    vergoeding.
-                  </p>
-
-                  <p class="ec-explain">
-                    Na oplevering heb je 10 werkdagen de tijd om gratis kleine
-                    aanpassingen te laten doen, zoals tekstwijzigingen, andere
-                    foto’s of kleuren. Zo zorgen we ervoor dat alles perfect bij
-                    jouw bedrijf past.
-                  </p>
-                </div>
-
-                <div>
-                  <p class="ec-header">Betalingmethode</p>
-                  <p class="ec-explain">
-                    Ik werk met een aanbetaling van 50%. We bespreken eerst wat
-                    je wil en welk pakket het beste past. Daarna stuur ik je een
-                    offerte met het afgesproken bedrag. Zodra de aanbetaling
-                    binnen is en jij alle verwachten media hebt aangeleverd zal
-                    ik aan de slag gaan. Omdat ik alles op maat maak, is geld
-                    terug daarna niet meer mogelijk.
-                  </p>
-
-                  <p class="ec-explain">
-                    De website wordt pas online gezet nadat het volledige bedrag
-                    is voldaan.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <!--Over mij onderdeel-->
-      <div class="blank-part">
-        <div class="about-me-bg">
-          <div class="about-me-container"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-formulier">
-      <h1>Voor vragen neem contact op</h1>
-      <div class="contact-part">
-        <div class="port-bg">
-          <div class="contact-screen">
-            <div class="thank-you-screen">
-              <div class="contact-background">
-                <div class="contact-background-fade"></div>
-                <header class="logo-bg">
-                  <img
-                    class="logo"
-                    src="Assets/Logo/Logo.png"
-                    alt="Logo Bedrijf - IndexNest"
-                  />
-                </header>
-              </div>
-            </div>
-            <div class="form-background">
-              <div class="form">
-                <form method="post" action="verzend.php" class="form-container">
-                  <div class="input-grid">
-                    <div class="input-contact">
-                      <label>Je e-mailadres</label>
-                      <input name="email" type="email" maxlength="100" />
-                    </div>
-
-                    <div class="input-contact">
-                      <label>Onderwerp</label>
-                      <input name="onderwerp" type="text" maxlength="100" />
-                    </div>
-
-                    <div class="input-contact">
+                  <div class="input-contact">
+                    <div class="questionbox-header">
                       <label>Vraag</label>
-                      <textarea
-                        id="question-box"
-                        name="vraag"
-                        maxlength="500"
-                      ></textarea>
                       <p id="character_count">Karakters over: 500</p>
                     </div>
-                    <button class="send-button">Verzend</button>
+                    <textarea
+                      id="question-box"
+                      name="vraag"
+                      maxlength="500"
+                    ></textarea>
                   </div>
-                </form>
-              </div>
+                  <button class="send-button">Verzend</button>
+                </div>
+              </form>
+
+              <span class="contact-title"
+                >Neem gerust contact op!
+
+                <p id="sub-text">
+                  <strong>E-mail:</strong>
+                  <a
+                    style="text-decoration: none"
+                    href="mailto:info@indexnest.nl"
+                    ><span
+                      style="
+                        color: #b9d29a;
+                        font-weight: 400;
+                        text-decoration: none;
+                      "
+                      >info@indexnest.nl</span
+                    ></a
+                  >
+                </p>
+                <p id="sub-text">
+                  <strong>Locatie:</strong
+                  ><span
+                    style="
+                      color: #b9d29a;
+                      font-weight: 400;
+                      text-decoration: none;
+                    "
+                  >
+                    Nederland (online beschikbaar)</span
+                  >
+                </p>
+              </span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <footer>
+        <div class="footer-part">
+          <div class="footer-bg">
+            <h4>
+              © IndexNest 2025 |
+              <a href="privacy_beleid.html" style="text-decoration: underline"
+                >Privacybeleid</a
+              >
+            </h4>
+          </div>
+        </div>
+      </footer>
+    </main>
     <script src="js.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

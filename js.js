@@ -1,57 +1,17 @@
-function activateCard() {
-  const hoverpairs = [
-    { triggerId: "p-card1", triggerCard: "po-card1" },
-    { triggerId: "p-card2", triggerCard: "po-card2" },
-    { triggerId: "p-card3", triggerCard: "po-card3" },
-    { triggerId: "pr-card1", triggerCard: "pr-card1-overlay" },
-    { triggerId: "pr-card2", triggerCard: "pr-card2-overlay" },
-    { triggerId: "pr-card3", triggerCard: "pr-card3-overlay" },
+function scrolltoview() {
+  const cto_buttons = [
+    { triggerID: "pakket", scrollID: "watleverik" },
+    { triggerID: "offerte", scrollID: "contact" },
   ];
 
-  hoverpairs.forEach(({ triggerId, triggerCard }) => {
-    const trigger = document.getElementById(triggerId);
-    const card = document.getElementById(triggerCard);
+  cto_buttons.forEach(({ triggerID, scrollID }) => {
+    const button = document.getElementById(triggerID);
+    const section = document.getElementById(scrollID);
 
-    if (trigger && card) {
-      trigger.addEventListener("mouseenter", () => {
-        card.classList.remove("hidden");
-      });
-
-      trigger.addEventListener("mouseleave", () => {
-        card.classList.add("hidden");
-      });
-    }
-  });
-}
-
-//Scroll functies
-function scrollAboutMe() {
-  const button = document.getElementById("aboutme-button");
-  const section = document.getElementById("aboutMeSection");
-
-  button.addEventListener("click", () => {
-    event.preventDefault();
-    section.scrollIntoView({ behavior: "smooth" });
-  });
-}
-
-function watMaakIk() {
-  const button = document.getElementById("watMaakIk-button");
-  const section = document.getElementById("watMaakIkSection");
-
-  button.addEventListener("click", () => {
-    event.preventDefault();
-    section.scrollIntoView({ behavior: "smooth" });
-  });
-}
-
-function prijzen() {
-  const button = document.getElementById("prijzen-button");
-  const section = document.getElementById("prijzenSection");
-
-  button.addEventListener("click", () => {
-    event.preventDefault();
-    section.scrollIntoView({ behavior: "smooth" });
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      section.scrollIntoView({ behavior: "smooth" });
+    });
   });
 }
 
@@ -76,10 +36,41 @@ function countchar() {
     }
   });
 }
-document.addEventListener("DOMContentLoaded", () => {
-  activateCard();
-  scrollAboutMe();
-  watMaakIk();
-  prijzen();
-  countchar();
-});
+
+function accordion() {
+  const faqQuestions = document.querySelectorAll(".faq-question");
+
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const answer = question.nextElementSibling;
+
+      // Sluit eerst alle andere antwoorden
+      document.querySelectorAll(".faq-answer").forEach((el) => {
+        if (el !== answer) el.classList.remove("open");
+      });
+
+      // Toggle huidige antwoord
+      answer.classList.toggle("open");
+    });
+  });
+}
+
+function preview() {
+  let currentIndex = 0;
+  const slides = document.querySelectorAll(".slider-image");
+
+  function showNextSlide() {
+    slides[currentIndex].classList.remove("active");
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add("active");
+  }
+
+  slides[currentIndex].classList.add("active");
+
+  setInterval(showNextSlide, 4000);
+}
+
+preview();
+accordion();
+scrolltoview();
+countchar();
